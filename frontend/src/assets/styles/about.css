@@ -1,0 +1,148 @@
+/* ---------------------------------------- style hero-section --------------------------------------------- */
+.image-container{
+  display: grid;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.image-container p{
+  color: white;
+  text-align: center;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+#main-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* -------------------------------------- style hero-section end ------------------------------------------- */
+
+
+/* ------------------------------------- style about-section start ---------------------------------------- */
+.about{
+  display: grid;
+  width: 97%;
+  height: 500px;
+  margin: 20px 0px 20px 20px;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.first-col ul{
+  margin-top: 30px;
+  list-style-type: none;
+  color:  #4887d8;
+}
+
+.first-col ul li{
+  margin-bottom: 20px;
+  font-weight:700;
+  font-size: 1rem;
+}
+
+.first-col ul li::before{
+  content : "\f00c";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+}
+
+.second-col img{
+  width: 90%;
+  height: 80%;
+}
+/* ------------------------------------- style about-section end ------------------------------------------ */
+
+
+/* ------------------------------------- style choose-section starts -------------------------------------- */
+#choose-section{
+  background-color: rgba(145, 127, 127, 0.1);
+  height: 500px;
+  overflow-x: hidden;
+}
+
+#choose-section span{
+  display: block;
+  padding-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.choose{
+  width: 100%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.card{
+  margin-bottom: 20px;
+}
+
+.card i{
+  padding: 20px;
+}
+
+.card h4{
+  margin-top: 20px;
+  color: rgba(0,0,0,0.9);
+}
+
+/* -------------------------------------- style choose-section end ------------------------------------------- */
+
+
+/* ------------------------------------- style mission-section start ---------------------------------------- */
+.mission{
+  margin: 50px 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.answer{
+  margin: 10px;
+}
+/* ----------------------------------- style mission-section ends ------------------------------------------ */
+
+
+/* ----------------------------------- style info-section starts ------------------------------------------ */
+.info{
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  padding: 20px;
+  background-color:  #4887d8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: start;
+}
+
+
+.info i{
+  padding: 30px;
+}
+
+.info-item{
+  display: flex;
+  align-items: center;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.info span{
+  color: white;
+  font-size: 1rem;
+  margin: 2px 0px 0px 25px;
+}
+/* ----------------------------------- style info-section ends ------------------------------------------ */
