@@ -1,0 +1,55 @@
+.hero{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 30px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.row i{
+  font-size: 1rem;
+  border: 2px solid #4887d8;
+}
+
+.col1{
+  flex: 1;
+}
+
+.col2{
+  flex: 3;
+}
+
+.col2 p:first-of-type{
+  font-size: 1rem;
+  font-weight: 500;
+  color:  #4887d8;
+}
+
+form{
+  margin-top: 30px;
+}
+
+form input, textarea{
+  width:100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0,0,0, 0.1);
+}
+
+form input:focus, textarea:focus{
+  outline: none;
+  background-color: whitesmoke;
+}  
+
+form input::placeholder, textarea::placeholder{
+  text-transform: capitalize;
+}
+
+.row button{
+  background-color: #4887d8;
+  width: 20%;
+  color: white;
+}
