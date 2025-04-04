@@ -1,0 +1,17 @@
+python -m pip install virtualenv             # install virtual environment
+python -m venv env                           # create virtual environment
+.\env\Scripts\activate                       # activate virtual environment
+python -m pip install Flask                  # install flask
+python -m pip install flask_sqlalchemy       # install sql-alchemy
+python -m pip install flask_login            # install flask-login
+python -m pip install bcrypt                 # install bcrypt
+python -m pip install flask_security         # install flask-security
+python -m pip install matplotlib             # install matplotlib
+pip freeze > requirements.txt                # create requirements.txt and populate packages
+npm install -g @vue/cli                      # install vue cli
+vue create .                                 # create project
+npm install vue-router@3                     # install vue router
+npm run serve                                # run vue app
+
+
+
