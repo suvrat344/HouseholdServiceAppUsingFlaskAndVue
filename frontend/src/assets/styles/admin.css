@@ -1,0 +1,115 @@
+#side-nav{
+  height: 100%;
+  width: 250px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+#side-nav ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+#side-nav ul li{
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor : pointer;
+}
+
+
+/* .dropdown-content{
+  display: none;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+  background-color: #111;
+  min-width: 250px;
+}
+
+
+.dropdown-content ul li{
+  padding-left: 30px;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+} */
+
+#professional-request{
+  margin-left:300px;
+}
+
+.profile-verified{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+  height: 450px;
+}
+
+.card p{
+  margin: 10px 20px;
+  text-align: left;
+}
+
+.card button{
+  display: block;
+  margin: auto;
+}
+
+.modal-overlay{
+  top: 10%;
+  left: 18%;
+}
+
+.modal-container{
+  width: 75%;
+  left: -100px;
+}
+
+.success{
+  text-align: center;
+  left: 20%;
+}
+
+table{
+  border-collapse: collapse;
+  font-family: sans-serif, "Poppins"; 
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th{
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+tr:nth-child(odd){
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+td{
+  padding: 10px;
+}
+
+button{
+  width:95%;
+  padding: 8px;
+}
