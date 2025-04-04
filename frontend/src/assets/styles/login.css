@@ -1,0 +1,95 @@
+.login-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.login-container .col1 form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.login-container .col1 .form-group{
+  width: 70%;
+}
+
+.login-container .col1 .form-group h2{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 550;
+}
+
+.login-container .col1 .form-group p{
+  margin: 2px 0px 5px 0px;
+}
+
+.login-container .col1 .form-group label{
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.login-container .col1 .form-group input{
+  border-radius: 10px;
+}
+
+.login-container .col1 .form-group input::placeholder{
+  text-transform: initial;
+}
+
+.login-container .col1 .form-group select{
+  width: 100%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+}
+
+.check{
+  display: flex;
+  gap: 5px;
+}
+
+.check input{
+  width: 40px;
+}
+
+.check input[type="checkbox"]{
+  height: 15px;
+  margin-right: -10px;
+}
+
+.check p{
+  flex: 1;
+  text-align: right;
+}
+
+.login-container .col1 .form-group button{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.login-container .col1 span{
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-container .col2{
+  height: 80vh;
+}
+
+.login-container .col2 img{
+  height: 100%;
+}
+
+
+.error{
+  color: red;
+  margin: 0px;
+}
