@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ------------------------------------- style header-section -------------------------------------------------- */
+#header-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 70px;
+}
+
+#header img{
+  margin: 20px 80px 0px 0px;
+  height: 50%;
+}
+
+.navbar ul{
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content:flex-end;
+  gap: 30px;
+  margin: 30px 80px 0px 0px;
+}
+
+.navbar ul li a{
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover{
+  transition: 2s ease;
+  color:  #4887d8;
+}
+
+#dropdown {
+  position: relative;
+  height: 200px;
+}
+
+#dropdownContent{
+  display: none;
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  background-color: white;
+  z-index: 1;
+}
+
+
+#dropdownContent li{
+  padding: 12px 2px;
+  margin: 4px 4px;
+}
+
+#dropdownContent li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.604);
+  display: block;
+}
+
+#dropdownContent li:hover{
+  background-color: #dddddd7e;
+}
+
+/* Show the dropdown when hovering over the parent menu item */
+#dropdown:hover #dropdownContent {
+  display: block;
+}
+/* -------------------------------- style header-section ends ----------------------------------------------- */
+
+
+/* style main-section starts */
+p{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+button{
+  text-transform: uppercase;
+  background-color: #4887d8;
+  color: black;
+  padding: 15px;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+button:hover{
+  transition: 2s linear;
+  background-color: rgba(0, 0, 255, 0.603);
+  color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+
+hr{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card{
+  background-color: white;
+  margin: 20px 30px;
+  box-shadow: 0px 0px 5px 5px rgba(145, 127, 127, 0.3);
+  height: 400px;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 20px 5px rgba(145, 127, 127, 0.7);
+}
+
+.card i{
+  display: block;
+  margin: 3px 0px;
+  color: rgba(145, 127, 127, 0.7);
+  text-align: center;
+}
+
+.card p{
+  margin: 0px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card p:first-of-type{
+  color: #4887d8;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.card button{
+  width: 70%;
+}
+
+.icon{
+  margin: 20px 0px 0px 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  color:  #4887d8;
+  padding: 20px;
+}
+
+span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-container h2{
+  text-align: center;
+}
+
+
+.modal-container form div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-container form label, input{
+  margin-bottom: 5px;
+}
+
+.modal-container form select{
+  padding: 10px;
+  font-family: "Sans-Serif", "Poppins";
+  border: 1px solid rgba(0, 0, 0, 0.113);
+}
+
+.success{
+  background-color: rgba(49, 128, 0, 0.412);
+  padding: 20px;
+}
+
+.failure{
+  background-color: rgba(255, 0, 0, 0.557);
+  padding: 20px;
+}
+
+.response, .loading{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* ---------------------------------- style main-section ends ----------------------------------------------- */
+
+
+/* style footer-section => #footer-section -> .footer*/
+.footer{
+  display: grid;
+  width: 100%;
+}
+.footer img{
+  width: 100%;
+}
+/* -------------------------------- style footer-section ends ----------------------------------------------- */
